@@ -1,0 +1,36 @@
+package com.catalogy.moviectalogservice.resources;
+
+import java.lang.reflect.Array;
+import java.util.*;
+import java.util.stream.Collectors;
+
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.catalogy.moviectalogservice.models.CatalogItem;
+import com.catalogy.moviectalogservice.models.Rating;
+
+@RestController
+public class MovieCatalogController {
+
+	@RequestMapping("/catalog/{userId}")
+	public List<CatalogItem> getCatalog(@PathVariable("userId") String userId) {
+		
+		List<Rating> ratings = Arrays.asList(
+				new Rating("1234", 4),
+				new Rating("5678", 3),
+				new Rating("9999", 5)
+				);
+ 		
+		
+		return ratings.stream().map(rating -> {
+			new CatalogItem("Stars", "TTTT", 3)
+				
+		}).collect(Collectors.toList());
+	}
+
+}
+
+
+

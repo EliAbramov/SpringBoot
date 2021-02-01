@@ -1,0 +1,30 @@
+package com.catalogy.moviectalogservice;
+
+import java.util.*;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MovieCatalogController {
+
+	User daniUser = new User(1000, "Dani Sho");	
+	Movie starsMovie = new Movie(1, "Stars", "TTTT", 3);
+	Movie lupinMovie = new Movie(2, "Lupin", "XXXX", 5);
+	Movie rushMovie  = new Movie(3, "Rush" , "VVVV", 2);
+	Movie[] movies = {starsMovie, starsMovie, starsMovie};
+	
+	MovieCatalog moviesCatalog = new MovieCatalog(daniUser, movies);
+	
+	
+	@GetMapping("/catalog")
+	public MovieCatalog getMoviesCatalog() {
+		return moviesCatalog;
+	}
+	
+	@GetMapping("/hello")
+	public String getHello() {
+		return "Welcome to movie catalog";
+	}
+}

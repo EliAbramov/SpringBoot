@@ -1,0 +1,5 @@
+package io.javabrains.topic;
+
+public interface TopicRepository {
+
+}

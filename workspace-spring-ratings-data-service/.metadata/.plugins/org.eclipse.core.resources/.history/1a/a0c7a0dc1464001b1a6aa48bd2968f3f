@@ -1,0 +1,5 @@
+package com.catalogy.ratingsdataservice.resource;
+
+public class RatingDataController {
+
+}

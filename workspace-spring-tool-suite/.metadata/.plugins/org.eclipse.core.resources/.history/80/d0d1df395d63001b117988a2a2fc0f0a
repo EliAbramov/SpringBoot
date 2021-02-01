@@ -1,0 +1,16 @@
+package com.catalogy.moviectalogservice;
+
+import com.catalogy.moviectalogservice.models.CatalogItem;
+
+public class MovieCatalog {
+
+	private User user;
+	private CatalogItem[] movies;
+	
+	
+	public MovieCatalog(User user, CatalogItem[] movies) {
+		super();
+		this.user = user;
+		this.movies = movies;
+	}	
+}

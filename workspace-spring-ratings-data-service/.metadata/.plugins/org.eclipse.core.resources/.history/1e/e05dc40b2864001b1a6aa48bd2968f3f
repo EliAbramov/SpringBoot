@@ -1,0 +1,32 @@
+package com.catalogy.ratingsdataservice.resource;
+
+import java.util.*;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+import com.catalogy.ratingsdataservice.models.Rating;
+
+@RestController
+@RequestMapping("/ratingsdata")
+public class RatingDataController {
+
+//	@Autowired
+//	private RestTemplate restTamplate;
+	
+	@RequestMapping("/{movieId}")
+	public List<Rating> getRatingData(@PathVariable("movieId") String movieId) {
+		
+		List<Rating> ratings = Arrays.asList(
+				new Rating("1234", 4),
+				new Rating("5678", 3),
+				new Rating("9999", 5)
+				);
+		
+		return ratings;
+	}
+	
+}

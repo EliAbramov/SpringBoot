@@ -1,0 +1,5 @@
+package com.catalogy.movieinfoservice.resources;
+
+public class MovieController {
+
+}

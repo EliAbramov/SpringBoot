@@ -1,0 +1,8 @@
+package com.catalogy.moviectalogservice;
+
+public class User {
+	
+	private int id;
+	private String name;
+	
+}

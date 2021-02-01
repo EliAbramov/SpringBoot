@@ -1,0 +1,31 @@
+package com.catalogy.moviectalogservice.resources;
+
+import java.util.*;
+
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.catalogy.moviectalogservice.models.CatalogItem;
+import com.catalogy.moviectalogservice.models.Movie;
+
+@RestController
+public class MovieCatalogController {
+
+	@RequestMapping("/catalog/{userId}")
+	public List<CatalogItem> getCatalog(@PathVariable("userId") String userId) {
+		return Collections.singletonList(
+				new CatalogItem("Stars", "TTTT", 3)
+				);
+	}
+
+	@RequestMapping("/movies/{movieId}")
+	public List<Movie> getMovies(@PathVariable("movieId") String movieId){
+		return Collections.singletonList(
+				new Movie("1000", "Stars")
+				);
+	}	
+}
+
+
+

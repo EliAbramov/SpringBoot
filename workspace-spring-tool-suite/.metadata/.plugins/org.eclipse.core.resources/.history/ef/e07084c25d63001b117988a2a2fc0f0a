@@ -1,0 +1,7 @@
+package com.catalogy.moviectalogservice.models;
+
+public class Movie {
+	
+	private String movieId;
+	private String name;
+}

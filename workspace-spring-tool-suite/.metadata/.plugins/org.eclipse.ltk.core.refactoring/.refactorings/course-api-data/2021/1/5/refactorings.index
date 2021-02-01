@@ -1,0 +1,12 @@
+1611883246396	Delete element
+1611883571408	Delete element
+1611883670779	Rename package 'com.javabrains.topic'
+1611961239537	Delete element
+1611961292818	Copy package
+1611961320530	Rename type 'Topic'
+1611961328942	Rename type 'TopicController'
+1611961337072	Rename type 'TopicRepository'
+1611961344929	Rename type 'TopicService'
+1611961457162	Rename field 'topicRepository'
+1611961497284	Rename local variable 'topics'
+1611963335990	Encapsulate field 'topic'

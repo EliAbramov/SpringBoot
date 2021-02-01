@@ -1,0 +1,13 @@
+package com.catalogy.moviectalogservice;
+
+public class MovieCatalog {
+
+	private Movie[] movies;
+	private User user;
+	
+	public MovieCatalog(Movie[] movies, User user) {
+		super();
+		this.movies = movies;
+		this.user = user;
+	}	
+}

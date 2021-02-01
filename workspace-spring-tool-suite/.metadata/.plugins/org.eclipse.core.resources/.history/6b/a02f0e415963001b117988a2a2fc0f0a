@@ -1,0 +1,24 @@
+package com.catalogy.moviectalogservice;
+
+import java.util.*;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MovieCatalogController {
+
+	// 	public Movie(int id, String name, String description, int rating) {
+	/*
+	 * private List<MovieCatalog> catalog = new ArrayList<>(Arrays.asList( new
+	 * MovieCatalog(new User(1000, "Rami Vill"), {new Movie(1, "Stars", "TTTT", 3),
+	 * new Movie(1, "Stars", "TTTT", 3), new Movie(1, "Stars", "TTTT", 3)} )));
+	 */
+	
+	
+	Movie stars = new Movie(1, "Stars", "TTTT", 3);
+	Movie lupin = new Movie(2, "Lupin", "XXXX", 5);
+	Movie rush = new Movie(3, "Rush", "VVVV", 2);
+
+	MovieCatalog catalog = new MovieCatalog()
+	
+}

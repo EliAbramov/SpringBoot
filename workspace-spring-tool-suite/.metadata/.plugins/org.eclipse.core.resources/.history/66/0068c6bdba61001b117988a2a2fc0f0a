@@ -1,0 +1,21 @@
+package com.javabrains.topic;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class TopicService {
+	
+	private List<Topic> topics = Arrays.asList(
+			new Topic("java", "Java course", "Spring boot description"),
+			new Topic("javascript", "JavaScript course", "NodeJS description"),
+			new Topic("C#", "C# course", "ASP.NET description")
+			); 
+	
+	
+	public List<Topic> getAllTopics() {
+		return topics;
+	}
+}

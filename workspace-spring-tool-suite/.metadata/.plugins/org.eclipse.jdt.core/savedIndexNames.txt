@@ -1,0 +1,14 @@
+INDEX VERSION 1.131+C:\Users\Eli Abramov\Documents\workspace-spring-tool-suite\.metadata\.plugins\org.eclipse.jdt.core
+1806648443.index
+2011417658.index
+1739144511.index
+1238990716.index
+3352358922.index
+3809910867.index
+511232056.index
+309141623.index
+753197860.index
+739323982.index
+2549077688.index
+41681386.index
+1763228863.index

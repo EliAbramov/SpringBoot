@@ -1,0 +1,5 @@
+package com.javabrains.hello;
+
+public class HelloController {
+
+}
